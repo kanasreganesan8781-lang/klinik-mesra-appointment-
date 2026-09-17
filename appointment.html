@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Appointment | Klinik Mersa</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <span>✚</span> KLINIK MERSA
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="services.html">Services</a>
+        <a href="appointment.html" class="active">Appointment</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="appointment.html" class="header-btn">
+        Book Appointment
+    </a>
+
+</header>
+
+
+<section class="services-preview">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            ONLINE APPOINTMENT
+        </p>
+
+        <h2>Book Your Appointment</h2>
+
+        <p>
+            Complete the form below to request an appointment.
+        </p>
+
+    </div>
+
+
+    <form id="appointmentForm" class="appointment-form">
+
+
+        <h3>Patient Information</h3>
+
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>
+                    Full Name *
+                </label>
+
+                <input
+                    type="text"
+                    id="patientName"
+                    required
+                    placeholder="Enter your full name">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Phone Number *
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    required
+                    placeholder="01X-XXXXXXX">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    IC / Passport Number
+                </label>
+
+                <input
+                    type="text"
+                    id="ic"
+                    placeholder="Enter IC / Passport number">
+
+            </div>
+
+
+        </div>
+
+
+        <h3 class="form-section-title">
+            Appointment Details
+        </h3>
+
+
+        <div class="form-grid">
+
+
+            <div class="form-group">
+
+                <label>
+                    Select Doctor *
+                </label>
+
+                <select id="doctor" required>
+
+                    <option value="">
+                        Select doctor
+                    </option>
+
+                    <option value="Dr. Siti Aisyah">
+                        Dr. Siti Aisyah
+                    </option>
+
+                    <option value="Dr. Priya Kumar">
+                        Dr. Priya Kumar
+                    </option>
+
+                    <option value="Dr. Nurul Hidayah">
+                        Dr. Nurul Hidayah
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Select Service *
+                </label>
+
+                <select id="service" required>
+
+                    <option value="">
+                        Select service
+                    </option>
+
+                    <option value="General Consultation">
+                        General Consultation
+                    </option>
+
+                    <option value="Wound Dressing">
+                        Wound Dressing
+                    </option>
+
+                    <option value="Vaccination">
+                        Vaccination
+                    </option>
+
+                    <option value="Skin Consultation">
+                        Skin Consultation
+                    </option>
+
+                    <option value="Health Screening">
+                        Health Screening
+                    </option>
+
+                    <option value="Medical Certificate">
+                        Medical Certificate
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Appointment Date *
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Preferred Time *
+                </label>
+
+                <select id="time" required>
+
+                    <option value="">
+                        Select time
+                    </option>
+
+                    <option value="09:00 AM">
+                        09:00 AM
+                    </option>
+
+                    <option value="10:00 AM">
+                        10:00 AM
+                    </option>
+
+                    <option value="11:00 AM">
+                        11:00 AM
+                    </option>
+
+                    <option value="02:00 PM">
+                        02:00 PM
+                    </option>
+
+                    <option value="03:00 PM">
+                        03:00 PM
+                    </option>
+
+                    <option value="04:00 PM">
+                        04:00 PM
+                    </option>
+
+                    <option value="07:00 PM">
+                        07:00 PM
+                    </option>
+
+                    <option value="08:00 PM">
+                        08:00 PM
+                    </option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Reason for Visit / Symptoms
+            </label>
+
+            <textarea
+                id="symptoms"
+                rows="5"
+                placeholder="Briefly describe your reason for visiting the clinic"></textarea>
+
+        </div>
+
+
+        <div class="form-group checkbox-group">
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="agreement"
+                    required>
+
+                I confirm that the information provided is correct.
+
+            </label>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="submit-btn">
+
+            Confirm Appointment
+
+        </button>
+
+
+    </form>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ✚ KLINIK MERSA
+    </div>
+
+    <p>
+        Quality healthcare. Convenient appointments.
+    </p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="services.html">Services</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 Klinik Mersa. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/appointment.js"></script>
+
+</body>
+</html>
